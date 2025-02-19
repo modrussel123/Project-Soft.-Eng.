@@ -1,0 +1,128 @@
+/* frontend/src/styles/Header.css */
+.header-wrapper {
+    background: #ffffff;
+    border-bottom: 1px solid #e5e7eb;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.1);
+  }
+  
+  .header {
+    width: 100%;
+    height: 80px; /* Increased height */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0 24px;
+    box-sizing: border-box;
+    background: #ffffff;
+  }
+  
+  .header-content {
+    max-width: 1280px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .logo-container {
+    text-decoration: none;
+    color: inherit;
+  }
+  
+  .header-title {
+    margin: 0;
+    font-size: 24px;
+    font-weight: 700;
+    color: #111827;
+    letter-spacing: -0.5px;
+  }
+  
+  .header-right {
+    display: flex;
+    align-items: center;
+    gap: 24px;
+  }
+  
+  .nav-links {
+    display: flex;
+    gap: 24px;
+    align-items: center;
+  }
+  
+  .nav-link {
+    color: #4b5563;
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: 500;
+    padding: 8px 12px;
+    border-radius: 6px;
+    transition: all 0.2s ease;
+    position: relative;
+  }
+  
+  .nav-link:hover {
+    color: #111827;
+    background-color: #f3f4f6;
+  }
+  
+  .nav-link.active {
+    color: #111827;
+    font-weight: 600;
+  }
+  
+  .nav-link.active::after {
+    content: '';
+    position: absolute;
+    bottom: -2px;
+    left: 0;
+    width: 100%;
+    height: 2px;
+    background-color: #111827;
+    border-radius: 2px;
+  }
+  
+  .settings-wrapper {
+    margin-left: 8px;
+  }
+  
+  /* Responsive design */
+  @media (max-width: 768px) {
+    .header {
+      height: 70px;
+      padding: 0 16px;
+    }
+  
+    .header-title {
+      font-size: 20px;
+    }
+  
+    .nav-links {
+      gap: 16px;
+    }
+  
+    .nav-link {
+      font-size: 14px;
+      padding: 6px 10px;
+    }
+  }
+  
+  /* Add smooth scroll behavior to the page */
+  html {
+    scroll-behavior: smooth;
+  }
+  
+  /* Optional: Add a subtle transition when the header becomes sticky */
+  .header-wrapper {
+    transition: transform 0.3s ease;
+  }
+  
+  .header-wrapper.sticky {
+    transform: translateY(-100%);
+  }
+  
+  .header-wrapper.sticky.visible {
+    transform: translateY(0);
+  }

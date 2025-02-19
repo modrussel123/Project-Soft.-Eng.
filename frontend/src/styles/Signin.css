@@ -1,0 +1,128 @@
+/* frontend/src/styles/SignIn.css */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap');
+
+.signin-container {
+  display: flex;
+  min-height: 100vh;
+  background: linear-gradient(135deg, #0F172A, #1E293B);
+  justify-content: center;
+  align-items: center;
+  font-family: 'Inter', sans-serif;
+}
+
+.signin-card {
+  width: 100%;
+  max-width: 450px;
+  background: rgba(30, 41, 59, 0.8);
+  border-radius: 20px;
+  box-shadow: 0 15px 35px rgba(0,0,0,0.2);
+  padding: 40px;
+  backdrop-filter: blur(10px);
+  border: 1px solid rgba(129, 140, 248, 0.2);
+}
+
+.signin-header {
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.signin-icon {
+  color: #22D3EE;
+  margin-bottom: 15px;
+}
+
+.signin-title {
+  color: #FFFFFF;
+  font-size: 36px;
+  font-weight: 700;
+  letter-spacing: 2px;
+  margin-bottom: 10px;
+}
+
+.signin-subtitle {
+  color: #64748B;
+  font-size: 16px;
+  letter-spacing: 1px;
+}
+
+.signin-form {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.signin-input-container {
+  position: relative;
+  display: flex;
+  align-items: center;
+  background: rgba(30, 41, 59, 0.6);
+  border-radius: 12px;
+  border: 1px solid rgba(129, 140, 248, 0.2);
+}
+
+.signin-input-icon {
+  color: #64748B;
+  padding: 15px;
+}
+
+.signin-input {
+  flex-grow: 1;
+  background: transparent;
+  border: none;
+  color: #FFFFFF;
+  font-size: 16px;
+  padding: 15px 0;
+}
+
+.signin-password-toggle {
+  background: none;
+  border: none;
+  padding: 15px;
+}
+
+.signin-password-icon {
+  color: #64748B;
+}
+
+.signin-button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: linear-gradient(to right, #22D3EE, #818CF8);
+  color: #0F172A;
+  border: none;
+  padding: 15px;
+  border-radius: 12px;
+  font-weight: 600;
+  font-size: 18px;
+  gap: 10px;
+  transition: transform 0.2s;
+}
+
+.signin-button:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 5px 15px rgba(34, 211, 238, 0.3);
+}
+
+.signin-button-icon {
+  color: #0F172A;
+}
+
+.signin-signup-link {
+  text-align: center;
+  margin-top: 20px;
+  color: #64748B;
+}
+
+.signin-signup-link a {
+  color: #22D3EE;
+  text-decoration: none;
+  font-weight: 600;
+}
+
+@media (max-width: 480px) {
+  .signin-card {
+    margin: 20px;
+    padding: 30px 20px;
+  }
+}

@@ -1,0 +1,79 @@
+/* styles/SettingsDropdown.css */
+.settings-container {
+  position: relative;
+}
+
+.settings-button {
+  background: #444;
+  color: white;
+  padding: 8px 12px;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+  transition: background-color 0.3s;
+}
+
+.settings-button:hover {
+  background: #555;
+}
+
+.settings-dropdown {
+  position: absolute;
+  right: 0;
+  top: 40px;
+  background: #fff;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+  z-index: 1000;
+  min-width: 200px;
+}
+
+.settings-dropdown ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.settings-dropdown ul li {
+  margin-bottom: 8px;
+}
+
+.settings-dropdown ul li:last-child {
+  margin-bottom: 0;
+}
+
+.settings-dropdown ul li a {
+  color: black;
+  text-decoration: none;
+  display: block;
+  padding: 8px 12px;
+  border-radius: 4px;
+  transition: all 0.2s ease;
+}
+
+.settings-dropdown ul li a:hover {
+  color: #333;
+  font-weight: bold;
+  background-color: #f5f5f5;
+}
+
+.signout-button {
+  width: 100%;
+  text-align: left;
+  padding: 8px 12px;
+  background: none;
+  border: none;
+  color: #dc3545;
+  cursor: pointer;
+  font-size: 14px;
+  font-weight: 500;
+  border-radius: 4px;
+  transition: all 0.2s ease;
+}
+
+.signout-button:hover {
+  background-color: #fff5f5;
+  color: #dc3545;
+}
